@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no, initial-scale=1">
+	<title>一键连加速器下载Andrid版本</title>
+    <meta name="robots" content="all">
+	<link href="testFlight/base.css" rel="stylesheet">
+    <script src="testFlight/jquery-1.11.1.min.js"></script>
+    <script src="testFlight/base.js"></script>
+
+	<script type="text/javascript" src="//www.shareinstall.com.cn/js/page/jshareinstall.min.js"></script>
+	<script type="text/javascript" src="js/common.js?t=20201021"></script>
+	
+	<!-- layer -->
+	<script type="text/javascript" src="layer/mobile/layer.js"></script>
+	<link rel="stylesheet" type="text/css" href="layer/mobile/need/layer.css">
+	
+<style type="text/css">@keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-moz-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-webkit-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}#fXPA62k-1577151670872{outline:none!important;visibility:visible!important;resize:none!important;box-shadow:none!important;overflow:visible!important;background:none!important;opacity:1!important;filter:alpha(opacity=100)!important;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity1)!important;-moz-opacity:1!important;-khtml-opacity:1!important;top:auto!important;right:10px!important;bottom:90px!important;left:auto!important;position:fixed!important;border:0!important;min-height:0!important;min-width:0!important;max-height:none!important;max-width:none!important;padding:0!important;margin:0!important;-moz-transition-property:none!important;-webkit-transition-property:none!important;-o-transition-property:none!important;transition-property:none!important;transform:none!important;-webkit-transform:none!important;-ms-transform:none!important;width:auto!important;height:auto!important;display:none!important;z-index:2000000000!important;background-color:transparent!important;cursor:auto!important;float:none!important;border-radius:unset!important;pointer-events:auto!important}#UMqMvgK-1577151670872.open{animation : tawkMaxOpen .25s ease!important;}
+.layui-m-layercont {color: #000;}
+</style>
+
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <h1><a href="javascript:void(0)"><img src="testFlight/logo.png" alt=""></a></h1>
+    </div>
+</div>
+<div class="content">
+	<div class="iosdown">
+		<h2>下载一键连加速器</h2>
+		<h3>真正的免费加速器，无任何流量限制</h3>
+	</div>
+	<div class="iosdown-step">
+		<div class="iosdown-item">
+			<p>领取免费套餐（系统将自动填写邀请码），安装VPN服务</p>
+			<a class="btn" id="app_downloadButton">
+				<img class="ios" src="testFlight/down_android.png">
+				<span>点击获取VPN服务</span>
+			</a>
+		</div>
+		<div class="iosdown-item">
+			<p><b style="color:#f3aa26;">如遇点击无反应，请稍等片刻，或切换浏览器、网络重试<b></p>
+		</div>
+	</div>
+</div>
+<div class="weixin-browser" id="weixin-browser" style="pointer-events: none; display: none;">
+    <div class="weixin-mask">
+        <div class="weixin-guide"><img src="testFlight/weixin_tips.png" alt=""></div>    
+    </div>
+</div>
+
+<script>
+    $(function(){
+		if (browser.versions.mobile) {		
+			var ua = navigator.userAgent.toLowerCase();
+			if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				$("#weixin-browser").show();	//在微信中打开
+			}
+			if (ua.match(/WeiBo/i) == "weibo") {
+				$("#weixin-browser").show();	//在新浪微博客户端打开
+			}
+			if (ua.match(/baidu/i) == "baidu") {
+				$("#weixin-browser").show();	//在新浪微博客户端打开
+			}
+			if (ua.match(/MQQBrowser/i) == "mqqbroser" && ua.match(/ QQ/i) != " qq") {
+				$("#weixin-browser").show();	//在QQ空间打开
+			}
+		} else{
+			$("#weixin-browser").hide();
+		}
+		
+		install("app_downloadButton");
+		
+		if(browser.versions.android) {
+			setTimeout(function() {
+				$("#app_downloadButton").trigger("click"); 
+			},1000);
+		}
+    });
+</script>
+</body>
+</html>

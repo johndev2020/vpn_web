@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no, initial-scale=1">
+	<title>一键连加速器下载ios版本</title>
+    <meta name="robots" content="all">
+	<link href="testFlight/base.css" rel="stylesheet">
+    <script src="testFlight/jquery-1.11.1.min.js"></script>
+    <script src="testFlight/base.js"></script>
+
+	<script type="text/javascript" src="//www.shareinstall.com.cn/js/page/jshareinstall.min.js"></script>
+	<script type="text/javascript" src="js/common.js?t=20201021"></script>
+	
+	<!-- layer -->
+	<script type="text/javascript" src="layer/mobile/layer.js"></script>
+	<link rel="stylesheet" type="text/css" href="layer/mobile/need/layer.css">
+
+	<style type="text/css">@keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-moz-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-webkit-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}#fXPA62k-1577151670872{outline:none!important;visibility:visible!important;resize:none!important;box-shadow:none!important;overflow:visible!important;background:none!important;opacity:1!important;filter:alpha(opacity=100)!important;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity1)!important;-moz-opacity:1!important;-khtml-opacity:1!important;top:auto!important;right:10px!important;bottom:90px!important;left:auto!important;position:fixed!important;border:0!important;min-height:0!important;min-width:0!important;max-height:none!important;max-width:none!important;padding:0!important;margin:0!important;-moz-transition-property:none!important;-webkit-transition-property:none!important;-o-transition-property:none!important;transition-property:none!important;transform:none!important;-webkit-transform:none!important;-ms-transform:none!important;width:auto!important;height:auto!important;display:none!important;z-index:2000000000!important;background-color:transparent!important;cursor:auto!important;float:none!important;border-radius:unset!important;pointer-events:auto!important}#UMqMvgK-1577151670872.open{animation : tawkMaxOpen .25s ease!important;}
+	.layui-m-layercont {color: #000;}
+	</style>
+
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <h1><a href="javascript:void(0)"><img src="testFlight/logo.png" alt=""></a></h1>
+    </div>
+</div>
+<div class="content">
+	<div class="iosdown">
+		<h2>下载一键连加速器</h2>
+		<h3>真正的免费加速器，无任何流量限制</h3>
+	</div>
+	
+	<!-- TestFlight链接无法打开 start -->
+	<style>#tf_tips a{display: block;margin-top: 20px;border-style: solid;border-color: yellow;margin: 10px 20px 10px 20px;border-radius: 15px;text-align: center;line-height: 32px;font-size: large;}
+    .tips{position:absolute;width:100%;height:calc(100vh + 500px);top:0;left:0;background-color:rgba(244,251,251,0.8);z-index:100;padding-top:170px;text-align:center}.tips p{padding:5px}.tips a{background-color:black}.tips input{width:80px;height:32px;background-color:yellow;border-radius:5px;color:black}</style>
+	<script>$(function(){$('#close_tips').click(function(){$('#tf_tips').removeClass('tips');$(this).hide()});var djs=5;var tii=setInterval(function(){if(djs<=0){$('#tf_tips').removeClass('tips');$('#close_tips').hide();clearInterval(tii)}else{$('#close_tips').val('关闭('+djs+'s)');djs--}},1000)});</script>
+	<div class="tips" id="tf_tips">	<a href="tf_vpn.html?t=20200819">		<p>			TestFlight链接无法打开		</p>		<p>			点击此处解决==&gt;&gt;			<span style="line-height: 44p;color: red;">				修复方案			</span>		</p>	</a>	<input id="close_tips" type="button" value="关闭">	</input></div>
+	<!-- TestFlight链接无法打开 end -->
+	
+	<div class="iosdown-step">
+		<h5>安装步骤</h5>
+		<div class="iosdown-item">
+			<span class="num">1</span>
+			<p>为获取VPN使用权限，需首先安装苹果官方软件TestFlight并<font color="red">返回本页面</font>，已安装则直接进入步骤2</p>
+			<a class="btn" id="testFlight_downloadButton">
+				<img class="flight" src="testFlight/down_flight.png" alt="">
+				<span>点击获取TestFlight</span>
+			</a>
+		</div>
+		<div class="iosdown-item">
+			<span class="num">2</span>
+			<p>领取免费套餐（系统将自动填写邀请码），安装VPN服务</p>
+			<a class="btn" id="app_downloadButton">
+				<img class="ios" src="testFlight/down_ios.png">
+				<span>点击获取VPN服务</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+<div class="weixin-browser" id="weixin-browser" style="pointer-events: none; display: none;">
+    <div class="weixin-mask">
+        <div class="weixin-guide"><img src="testFlight/weixin_tips.png" alt=""></div>    
+    </div>
+</div>
+
+<script>
+    $(function(){
+		if (browser.versions.mobile) {			
+			var ua = navigator.userAgent.toLowerCase();
+			if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				$("#weixin-browser").show();	//在微信中打开
+			}
+			if (ua.match(/WeiBo/i) == "weibo") {
+				$("#weixin-browser").show();	//在新浪微博客户端打开
+			}
+			if (ua.match(/baidu/i) == "baidu") {
+				$("#weixin-browser").show();	//在新浪微博客户端打开
+			}
+			if (ua.match(/MQQBrowser/i) == "mqqbroser" && ua.match(/ QQ/i) != " qq") {
+				$("#weixin-browser").show();	//在QQ空间打开
+			}
+		} else{
+			$("#weixin-browser").hide();
+		}
+		
+		$("#testFlight_downloadButton").click(function(){
+			layer.open({
+				content: 'TestFlight是苹果官方应用，请放心下载。下载后无需其他操作，请务必返回本页并继续安装VPN应用。',
+				btn: ['我知道了'],
+				yes: function(index){
+					window.open("https://apps.apple.com/cn/app/testflight/id899247664");
+					layer.close(index);
+				}
+			});	
+		});
+		
+		install("app_downloadButton");
+    });
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o56k0');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
+</html>
